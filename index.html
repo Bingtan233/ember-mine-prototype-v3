@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#17160f">
+  <title>余烬矿团 · 双世界测试版</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="progression.css">
+</head>
+<body>
+  <main id="game">
+    <header class="resource-bar">
+      <span title="战力"><i>⚔</i><b id="powerValue">0</b></span>
+      <span title="经验"><i>EXP</i><b id="expValue">0</b></span>
+      <span title="金币"><i>●</i><b id="goldValue">0</b></span>
+      <span title="血钻"><i>♦</i><b id="gemValue">0</b><button id="bonusButton">＋</button></span>
+    </header>
+    <section id="screen" class="screen"></section>
+    <nav class="bottom-nav" aria-label="主要功能">
+      <button data-tab="home" class="active"><i>▤</i><b>主界面</b></button>
+      <button data-tab="battle"><i>⚔</i><b>冒险</b></button>
+      <button data-tab="mine"><i>⛏</i><b>挖矿</b></button>
+      <button data-tab="arena"><i>♜</i><b>竞技</b></button>
+      <button data-tab="summon"><i>✦</i><b>召唤</b></button>
+      <button data-tab="heroes"><i>♟</i><b>英雄</b></button>
+    </nav>
+  </main>
+  <div id="modalRoot"></div>
+  <div id="toast" class="toast" role="status"></div>
+  <script src="game.js"></script>
+</body>
+</html>
